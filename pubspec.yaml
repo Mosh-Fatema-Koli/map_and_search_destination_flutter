@@ -43,6 +43,7 @@ dependencies:
   flutter_screenutil:
   equatable:
   shimmer:
+  http:
 
 dev_dependencies:
   flutter_test:
