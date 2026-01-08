@@ -234,6 +234,7 @@ class SearchMapView extends StatelessWidget {
 
     return FlutterMap(
       options: MapOptions(
+        zoom: 5,
         bounds: bounds,
         boundsOptions: const FitBoundsOptions(padding: EdgeInsets.all(50)),
       ),

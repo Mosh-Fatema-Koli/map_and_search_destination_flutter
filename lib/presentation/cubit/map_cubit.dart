@@ -38,8 +38,7 @@ class MapCubit extends Cubit<MapState> {
         await placemarkFromCoordinates(position.latitude, position.longitude);
         if (placemarks.isNotEmpty) {
           final place = placemarks.first;
-          locationName =
-          "${place.subLocality ?? ''}, ${place.locality ?? ''}, ${place.country ?? ''}";
+          locationName = " ${place.street ?? ''}, ${place.subLocality ?? ''}, ${place.locality ?? ''}, ${place.country ?? ''}";
         }
       } catch (_) {
         locationName = 'Unknown';

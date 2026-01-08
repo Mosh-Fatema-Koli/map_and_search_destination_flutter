@@ -26,7 +26,7 @@ class SearchMapCubit extends Cubit<SearchMapState> {
         if (placemarks.isNotEmpty) {
           final place = placemarks.first;
           locationName =
-          "${place.subLocality ?? ''}, ${place.locality ?? ''}, ${place.country ?? ''}";
+          "${place.street ?? ''}, ${place.subLocality ?? ''}, ${place.locality ?? ''}, ${place.country ?? ''}";
         }
       } catch (_) {}
 
